@@ -16,10 +16,10 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
 
         new Handler().postDelayed(() -> {
-            //SplashActivity.this.startActivity(new Intent(this, OnboardingActivity.class)
-            //        .addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP));
-            SplashActivity.this.startActivity(new Intent(this, IslemlerActivity.class)
+            SplashActivity.this.startActivity(new Intent(this, OnboardingActivity.class)
                     .addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP));
+            //SplashActivity.this.startActivity(new Intent(this, IslemlerActivity.class)
+            //        .addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP));
 
             SplashActivity.this.finish();
         }, 3000);
